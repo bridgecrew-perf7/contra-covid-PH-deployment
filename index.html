@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CONTRA COVID PH</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/badCovid.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+		
+		<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!For Sims-->
+		 <style>
+	#chartContainerOpenEconomy{
+		width: 80%;
+		height: 20%;
+		float:left;
+		margin-bottom:10px;
+	}
+	#canvas{
+	 resize: both;
+  overflow: auto;
+	}
+
+	#simulationOpenEconomy {
+	margin:auto;
+width: min-content;
+
+	}
+	#OpenEconomy{
+	width: 10%;
+	height: 20%;
+	}
+	#statsOpenEconomy {
+		float:left;
+		font-weight: 1000;
+		height: 200px;
+		width: 20%;
+
+		font-smooth : never;
+		font-size: 22px;
+	}
+	
+  </style>
+ 
+    </head>
+    <body id="page-top">
+	<script src="https://d3js.org/d3-random.v1.min.js"></script>
+<script src="https://unpkg.com/geometric@2/build/geometric.min.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="js/openEconomy.js" defer></script>
+       <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"> <img src="assets/img/badCovid.png" style="width:10%" alt=""/> CONTRA COVID Philippines</a>
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Simulations</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Explanation</a></li>
+						<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#donate">Donate</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center" style="background-image:url('assets/img/bg.jpg')">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/badCovid.png" alt=""/>
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">CONTRA COVID Philippines</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                  
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Interactive Pandemic Spread Simulation Made to Educate the Youth about Flattening the Curve of <b>COVID-19</b></p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Simulations</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    
+                </div>
+                <!-- Portfolio Grid Items-->
+				<h2 class=" text-center text-uppercase text-primary mb-0">Pandemic Simulation</h2>
+					<div id="chartContainerOpenEconomy" ></div>
+				<div id="statsOpenEconomy"><p></p></div>
+               <div id="simulationOpenEconomy" ></div>
+			   
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+             <div class="container">
+                <!-- Portfolio Section Heading-->
+               
+			     <h2  class="page-section-heading text-center text-uppercase text-white mb-0">Explanation</h2>
+				    <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    
+                </div>
+			   <div class="embed-responsive embed-responsive-16by9">
+			   
+<iframe width="853" height="480" src="https://www.youtube.com/embed/PQj6JuRbXJI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<h2 class=" text-center text-uppercase text-white mb-0"><br>Transcript</h2>
+<p class=" text-center" >Written By Ramnick Francis Ramos</p>
+<div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    
+                </div>
+<p>On December 2019, a worldwide pandemic caused by a novel virus started in Wuhan, China: the Severe Acute Respiratory Syndrome Coronavirus 2 which causes COVID-19. Since then, we often hear the term “flatten the curve”. But what does that really mean? Why do we need to do it? First, we ought to know what compartmental modelling is.</p>
+<p>Compartmental modelling in epidemiology classifies the population into compartments.On the onset of COVID-19 Pandemic, the World Health Organization used an SEIR Model to forecast the outbreak.SEIR stands for the compartments it uses:</p>
+<p>Susceptible, those who are able to become infected;</p>
+<p>Exposed, those who had been infected but can’t spread the virus;</p>
+<p>Infectious, those who are able to spread the virus; and</p>
+<p>Removed, those who either had survived or died because of COVID-19.</p>
+<p>Imagine that we have a set of marble, and we let them perpetually roll in closed region – causing them to bump with each other. This represents us in an open economy.</p>
+<p>But what happens a COVID-19 Positive marble is introduced?</p>
+<p>When an infectious individual enters the population, the infectious compartment will exponentially grow as it affects the susceptible compartment. COVID-19 positive individuals that are asymptomatic are categorized to the Exposed Compartment. With the assumption that asymptomatic individuals have low chances of being infectious, Exposed compartment cannot infect other people.  And after some time, these infected individuals will either survive or die, they will then be a part of the removed compartment.</p>
+<p>You will observe that the number of individuals per category through time is graphed by a curve. This is the curve that we are trying to flatten. </p>
+<p>But why “flatten the curve”? If the spike of COVID-19’s Infectious curve exceed the capacity of our health facilities, more people will die. </p>
+<p>To fully gauge what this mean, we must know that these curves are governed with their corresponding Ordinary Differential Equations. Simply put, these equations dictate the rate of change of the number of individuals per compartment, which is directly proportional to the incubation and infectious period of the disease and to the contact rate of the population. </p>
+<p>For us ordinary individuals, what we can do is follow certain measures mandated by the World Health Organization: Social Distancing and Quarantining of Infected Individuals. You will be surprised on how this will drastically “flatten the curve.”</p>
+<p>With the tens of thousands of people dying worldwide because of COVID-19 | and a vaccine that is still yet-to-be-developed, flattening the curve is perhaps the most imperative thing we should focus on. But you, will you take your part on flattening the curve?</p>
+            </div>
+        </section>
+		<style>
+div.gallery {
+	
+  margin: 5px;
+
+  border: 1px solid #ccc;
+  float: left;
+  width: 160px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+ background-color:white;
+  padding: 15px;
+  text-align: center;
+}
+</style>
+		    <section class="page-section portfolio " id="donate"  style="background-image:url('assets/img/bg.jpg'); padding-bottom:550px; ">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Donate</h2>
+				<!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    
+                </div>
+				<p class="text-white text-center">Consolidated below are organizations that run COVID-19 Donation Drives. Make sure to visit them and offer a helping hand!</p>
+            
+				<div class="gallery">
+  <a target="https://www.facebook.com/develophorg" href="https://www.facebook.com/develophorg">
+    <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.0-9/61982014_2456718414652251_5497453758289805312_o.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeGYqU1mUsSjZBHwtBGlNy91QU9DQbUTnGFBT0NBtROcYd4Yce-iRVna9f9PO8GkgoplKCLcm4guVhEcxUQc73FG&_nc_ohc=twa8odeHwq8AX-Kad1n&_nc_ht=scontent.fmnl25-1.fna&oh=92b61af5e9e1b8bd72afdc46bcb82b32&oe=5FD8A28C" alt="DeveloPh" width="600" height="400">
+  </a>
+  <div class="desc"><b>DeveloPh</b> has a donation drive for gathering mobile load allowances for students</div>
+</div>
+
+<div class="gallery">
+  <a target="https://philippines.oxfam.org/latest/stories/oneagainstcovid19-donate-oxfam-and-other-charities-through-paymaya" href="https://philippines.oxfam.org/latest/stories/oneagainstcovid19-donate-oxfam-and-other-charities-through-paymaya">
+    <img src="https://media-exp1.licdn.com/dms/image/C560BAQGxggEAfTho3A/company-logo_200_200/0?e=2159024400&v=beta&t=kOjIeyPNIGrnNP7L1alYxMKRby5e919dHT2rOA42yLg" alt="Oxfam" width="600" height="400">
+  </a>
+  <div class="desc">#OneAgainstCOVID19 is a donation drive initiative made by <b>Oxafam</b> to support communities and frontliners</div>
+</div>
+
+<div class="gallery">
+  <a target="https://www.facebook.com/TudloBXU" href="https://www.facebook.com/TudloBXU">
+    <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.0-9/104483215_109512677472881_5225400211100996494_n.png?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeFXMV8bcjuN-RWUldjz1Y6Qv3bUfrJi4tq_dtR-smLi2kkOlEXig05-CBTsdGXwepmd2rHgzl69Yzku2a6AVQBE&_nc_ohc=-KWBNqi5oKoAX-1VlPI&_nc_ht=scontent.fmnl25-1.fna&oh=5f8b411e381d914bbc1ae0d5795b9bfc&oe=5FD7FB29" alt="Tudlo BXU" width="600" height="400">
+  </a>
+  <div class="desc"><b>Tudlo BXU</b> is a non-profit grassroots project to assist Butuanon schools and learners during the COVID-19 pandemic.</div>
+</div>
+
+<div class="gallery">
+  <a target="https://www.facebook.com/PLDScreenShare" href="https://www.facebook.com/PLDScreenShare">
+    <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.0-9/117037223_100188701803809_3868607705201086778_o.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeEzhcQqrrexVmMDT-QozMTSVo_abDsIMnxWj9psOwgyfLSVbYlWqE1Ezaz-3T_5f5PCruBQ4pUE0zJaMAS9WizL&_nc_ohc=E4ISBnLDbqQAX9PZ2hP&_nc_ht=scontent.fmnl25-1.fna&oh=989192ace633fb103fda85298192bcd8&oe=5FD86D91" alt="Share Screen: A Gadget Donation Drive" width="600" height="400">
+  </a>
+  <div class="desc"><b>Screen Share</b> is an initiative by the Phi Lambda Delta Sorority that aims to help overcome the barriers of online education through the collection and donation of gadgets.</div>
+</div>
+
+<div class="gallery">
+  <a target="https://www.facebook.com/salindiwa.ph" href="https://www.facebook.com/salindiwa.ph">
+    <img src="https://scontent.fmnl25-2.fna.fbcdn.net/v/t1.0-9/116175415_137262901376972_7471230550244303519_o.jpg?_nc_cat=110&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeEZzjApLSwDyNqyVFKnQYiMqmXPM49TiImqZc8zj1OIiRme3dMezuPPP63MPRr5ucs5VStzHXxitL36lhAE6IwD&_nc_ohc=p5maAxiAXt4AX912ly1&_nc_ht=scontent.fmnl25-2.fna&oh=7937b004a6b59a1da93bd4c001ab0ed1&oe=5FD872AD" alt="Salindiwa Donation Drive" width="600" height="400">
+  </a>
+  <div class="desc"><b>Salindiwa</b> is a student-led initiative united in the call that #NoStudent ShouldLeftBehind, especially amidst the COVID-19 pandemic.</div>
+</div>
+
+
+<div class="gallery">
+  <a target="https://l.facebook.com/l.php?u=http%3A%2F%2Ftiny.cc%2FKumayapDonation%3Ffbclid%3DIwAR1kk4vHXZqynqC4pJZJX-j2Jr4Pi-nkvKURF8vqTjUjvyimJzX9G5G29hE&h=AT2URb1KSydJbUE_ENA_zOkxdZrhXbumVRq7H001bfb3Cr0frm4eHINhg0c3sHnN8gSha7GajnXb-TE8mnOICYEv3CDv_-uGhlsZgJf02jWbV0jIkaFDMvCaP4PiNP6yswnN&__tn__=-UK-R&c[0]=AT02VWVQMBneBYpAnpwLFWkSgv2JtPr_QhEymCOeLrF-aGaIQpvi5wbYzSxfhheRakdVlxYSejGuPa_riK-IduKW1bnx1SULcjGZMSoOyQg7kTXKCxJAHkSrNMCz2Dq4tbZTDQVoUUm4DmnQubXC5vqMwXwzzbWxl3vgpnZ_niRmjz8" href="https://l.facebook.com/l.php?u=http%3A%2F%2Ftiny.cc%2FKumayapDonation%3Ffbclid%3DIwAR1kk4vHXZqynqC4pJZJX-j2Jr4Pi-nkvKURF8vqTjUjvyimJzX9G5G29hE&h=AT2URb1KSydJbUE_ENA_zOkxdZrhXbumVRq7H001bfb3Cr0frm4eHINhg0c3sHnN8gSha7GajnXb-TE8mnOICYEv3CDv_-uGhlsZgJf02jWbV0jIkaFDMvCaP4PiNP6yswnN&__tn__=-UK-R&c[0]=AT02VWVQMBneBYpAnpwLFWkSgv2JtPr_QhEymCOeLrF-aGaIQpvi5wbYzSxfhheRakdVlxYSejGuPa_riK-IduKW1bnx1SULcjGZMSoOyQg7kTXKCxJAHkSrNMCz2Dq4tbZTDQVoUUm4DmnQubXC5vqMwXwzzbWxl3vgpnZ_niRmjz8">
+    <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.0-9/48380916_2234252510177435_3823405338875396096_o.png?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeFvGbLMo9qTwXQhipo1Ket-H4Y4VaqQJI4fhjhVqpAkjqShGa0386-kO75ZburshZh4qOiHbDVxkkW_2_-oFzhi&_nc_ohc=cdHkda4U6SwAX9fFsJA&_nc_ht=scontent.fmnl25-1.fna&oh=47e762cb0f7d590c93389a6e9ecfabde&oe=5FD7FEA8" alt="Salindiwa Donation Drive" width="600" height="400">
+  </a>
+  <div class="desc"><b>Kumáyap: An E-ducation drive</b> by The Iniative PH aims to provide for students who lack school necessities for the “new normal” type of learning this incoming school year. Join us as we extend a helping hand to fellow students.</div>
+</div>                <!-- Portfolio Grid Items-->
+				
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+               
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Name</label>
+                                    <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Email Address</label>
+                                    <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Phone Number</label>
+                                    <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br />
+                            <div id="success"></div>
+                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            Siniloan, Laguna
+                            <br />
+                             Philippines
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                       <img src="assets/img/badCovid.png" style="width:50%" alt=""/> 
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">CONTRA COVID Philippines</h4>
+                        <p class="lead mb-0">
+							CONTRA COVID Philippines was soley developed by <b>Ramnick Francis P. Ramos</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright © Ramnick Francis Ramos 2020</small></div>
+        </div>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+       
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Tasty Cake</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Circus Tent</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
